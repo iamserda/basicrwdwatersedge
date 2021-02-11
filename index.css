@@ -9,12 +9,16 @@ html,
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 body {
     font-family: "Helvetica Neue", Ubuntu, "Segoe UI", sans-serif;
     background-color: rgb(255, 255, 255);
     color: rgb(100, 100, 100);
+    display: flex;
+    flex-flow: column nowrap;
+    
 }
 header {
     padding-top: 3vh;
@@ -124,4 +128,23 @@ article{
     .col-sm > .background {
         height: 100%;
     }
+}
+main.container{
+    flex: 1 0 auto;
+}
+.footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(0, 99, 180);
+    
+    font-weight: 600;
+    flex-shrink: 0;
+}
+.footer>p{
+    color:rgb(255, 246, 125);
+    font-size: 0.75rem;
+    padding: 1em;
+    text-align: center;
 }
