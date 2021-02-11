@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Ubuntu, "Segoe UI", sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(100, 100, 100);
+}
+header {
+    padding-top: 3vh;
+}
+h2 {
+    font-size: 1.125rem;
+    color: rgb(0, 99, 180);
+    margin: 0;
+}
+p {
+    font-size: 1rem;
+    padding: 0 0.5em;
+}
+header > img {
+    width: 100%;
+    max-height: 200px;
+    display: block;
+    object-fit: cover;
+}
+article{
+    margin-top: 1em;
+}
+.photographer {
+    font-weight: bold;
+    font-size: 55%;
+}
+
+/* main{
+    box-shadow: 0 0 4px rgba(0,0,0,0.8);
+} */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    min-width: 360px;
+    max-width: 1200px;
+}
+
+.title {
+    color: rgb(0, 99, 180);
+    margin: 0 auto 1em;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+}
+.title > span {
+    color: rgb(255, 246, 125);
+}
+.column > h2 {
+    font-size: 1.25rem;
+    padding: 0.5em 0;
+    text-align: center;
+}
+.column > p {
+    font-size: 1.125rem;
+}
+.columns {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    margin: 2em auto;
+}
+.column {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    background: rgb(245, 245, 245);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+
+}
+.col-sm > .background {
+    color: rgb(0, 99, 180);
+    background-color: rgb(255, 246, 125);
+    font-weight: 500;
+    margin: 0;
+    padding: 1em;
+}
+
+@media (min-width: 769px) {
+    .columns {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 2em 0;
+    }
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        max-width: 20%;
+        min-height: auto;
+    }
+
+    .col-sm {
+        flex: 1 1 auto;
+    }
+    .col-lg {
+        flex: 3 1 auto;
+        max-width: 55%;
+    }
+    .col-xl {
+        flex: 3 1 auto;
+        max-width: 77.5%;
+    }
+    .col-sm > .background {
+        height: 100%;
+    }
+}
